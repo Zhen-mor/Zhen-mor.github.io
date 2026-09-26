@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zhen Zhang | Academic Homepage</title>
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --paper: #ffffff;
+      --text: #1b1b1b;
+      --muted: #5d6470;
+      --line: #e7e4df;
+      --accent: #1f4f7a;
+      --accent-soft: #edf4fa;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 28px;
+      align-items: center;
+      padding: 24px 0 36px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #dfeaf5, #bfd3e9);
+      display: grid;
+      place-items: center;
+      font-size: 2rem;
+      color: var(--accent);
+      font-weight: bold;
+      border: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 3vw, 3rem);
+      letter-spacing: -0.04em;
+    }
+
+    .subtitle {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    section {
+      padding-top: 30px;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 30px;
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .pub-item {
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .pub-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .tag {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      padding: 5px 8px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 780px) {
+      header, .two-col {
+        grid-template-columns: 1fr;
+      }
+      .photo {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="photo">ZZ</div>
+      <div>
+        <h1>Zhen Zhang</h1>
+        <p class="subtitle">Master's Student in Applied Statistics</p>
+        <p>
+          School of Statistics and Data Science<br>
+          Shanghai University of International Business and Economics<br>
+          Email: 26349283@suibe.edu.cn
+        </p>
+        <div class="links">
+          <a href="mailto:26349283@suibe.edu.cn">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        I am a Master's student in Applied Statistics at the School of Statistics and Data Science,
+        Shanghai University of International Business and Economics (2026–2028). My research focuses on
+        the intersection of Financial Technology and Financial Statistics, with particular interests in
+        quantitative finance and the applications of AI agents in financial systems.
+      </p>
+      <p>
+        I hold a Bachelor's degree in Financial Mathematics from Zhejiang University of Finance and Economics (2022–2026),
+        where I developed a strong foundation in mathematical modeling and statistical analysis.
+      </p>
+    </section>
+
+    <section class="two-col">
+      <div>
+        <h2>Research Interests</h2>
+        <div class="card">
+          <span class="tag">Financial Technology</span>
+          <span class="tag">Financial Statistics</span>
+          <span class="tag">Quantitative Finance</span>
+          <span class="tag">AI Agents</span>
+          <span class="tag">Statistical Modeling</span>
+        </div>
+      </div>
+
+      <div>
+        <h2>Education</h2>
+        <ul>
+          <li><strong>Master's</strong> in Applied Statistics, Shanghai University of International Business and Economics (2026–2028)</li>
+          <li><strong>Bachelor's</strong> in Financial Mathematics, Zhejiang University of Finance and Economics (2022–2026)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        School of Statistics and Data Science<br>
+        Shanghai University of International Business and Economics<br>
+        Email: <a href="mailto:26349283@suibe.edu.cn">26349283@suibe.edu.cn</a>
+      </p>
+    </section>
+  </div>
+</body>
+</html>
